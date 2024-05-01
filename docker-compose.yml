@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: db-user-service
+    ports:
+      - 5433:5432
+    expose:
+      - "5433"
+    environment:
+      POSTGRES_DB: user
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: postgres
+
+  backend:
+    container_name: user-service
+    build:
+      context: ..
+      dockerfile: UserService/docker/builder/DockerFile
+      args:
+        BUILD_PATH: UserService
+    ports:
+      - "8087:80"
+    environment:
+      - SERVER_PORT=80
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db/user
+    depends_on:
+      - db
+
+
