@@ -8,7 +8,7 @@ java {
     sourceCompatibility = '17'
 }
 
-group 'org.example'
+group 'com.clearsolutions'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -41,7 +41,7 @@ dependencies {
 }
 
 springBoot {
-    mainClass = 'com.example.userservice.UserServiceApp'
+    mainClass = 'com.clearsolutions.userservice.UserServiceApp'
 }
 
 test {

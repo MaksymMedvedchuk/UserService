@@ -4,38 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="586659a8-8e12-4038-90e9-b0478b8e6319" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="586659a8-8e12-4038-90e9-b0478b8e6319" name="Changes" comment="added project to git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/builder/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/builder/DockerFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lombok.config" beforeDir="false" afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserServiceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserServiceApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/config/ApiConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/config/ApiConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/controller/exception/RestResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/controller/exception/RestResponseEntityExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/converter/UserDataConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/converter/UserDataConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/ApiErrorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/ApiErrorDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/CustomPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/CustomPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/UserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/UserPatchDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/UserPatchDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/LinksProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/LinksProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/ApiError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/ApiError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/DuplicateEmailException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/DuplicateEmailException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/MinorUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/MinorUserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/ResourceNotfoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/ResourceNotfoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/impl/LinksProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/impl/LinksProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.migration/V1__Create_Users_Table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.migration/V1__Create_Users_Table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/userservice/GetterAndSettersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/userservice/GetterAndSettersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/userservice/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/userservice/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/UserServiceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/UserServiceApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/config/ApiConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/config/ApiConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/config/ModelMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/config/ModelMapperConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/controller/exception/RestResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/controller/exception/RestResponseEntityExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/converter/UserDataConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/converter/UserDataConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/ApiErrorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/domain/dto/ApiErrorDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/CustomPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/domain/dto/CustomPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/domain/dto/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/domain/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/dto/UserPatchDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/domain/dto/UserPatchDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/domain/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/LinksProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/service/LinksProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/ApiError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/service/exception/ApiError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/DuplicateEmailException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/service/exception/DuplicateEmailException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/MinorUserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/service/exception/MinorUserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/exception/ResourceNotfoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/service/exception/ResourceNotfoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/impl/LinksProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/service/impl/LinksProviderImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/userservice/core/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/clearsolutions/userservice/core/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/userservice/GetterAndSettersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/clearsolutions/userservice/GetterAndSettersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/userservice/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/clearsolutions/userservice/controller/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +123,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.db: Compose Deployment">
+  <component name="RunManager" selected="Gradle.GetterAndSettersTest">
     <configuration name="GetterAndSettersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -142,7 +137,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.example.userservice.GetterAndSettersTest&quot;" />
+            <option value="&quot;com.clearsolutions.userservice.GetterAndSettersTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.clearsolutions.userservice.controller.UserControllerTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,49 +212,26 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserServiceApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="UserServiceApp (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="UserService.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userservice.UserServiceApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.clearsolutions.userservice.UserServiceApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clearsolutions.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="aws.lambda" factoryName="Remote">
-      <option name="credentialProviderId" />
-      <option name="regionId" />
-      <option name="functionName" />
-      <option name="input" />
-      <option name="inputIsFile" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="db" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.db: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Gradle.GetterAndSettersTest" />
+        <item itemvalue="Spring Boot.UserServiceApp (1)" />
         <item itemvalue="Gradle.UserService [build]" />
         <item itemvalue="Gradle.UserService [clean]" />
-        <item itemvalue="Gradle.GetterAndSettersTest" />
+        <item itemvalue="Gradle.UserControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -256,8 +251,17 @@
       <workItem from="1714391255636" duration="26064000" />
       <workItem from="1714463384824" duration="1457000" />
       <workItem from="1714465021213" duration="32021000" />
-      <workItem from="1714551454105" duration="16194000" />
+      <workItem from="1714551454105" duration="16716000" />
+      <workItem from="1714570017673" duration="5973000" />
     </task>
+    <task id="LOCAL-00001" summary="added project to git">
+      <created>1714568705986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1714568705986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,5 +277,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added project to git" />
+    <option name="LAST_COMMIT_MESSAGE" value="added project to git" />
   </component>
 </project>
