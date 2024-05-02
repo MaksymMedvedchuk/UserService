@@ -1,8 +1,8 @@
 package com.clearsolutions.userservice.core.service.impl;
 
+import com.clearsolutions.userservice.config.ApiConstants;
 import com.clearsolutions.userservice.core.domain.dto.UserPatchDto;
 import com.clearsolutions.userservice.core.domain.entity.User;
-import com.clearsolutions.userservice.config.ApiConstants;
 import com.clearsolutions.userservice.core.repository.UserRepository;
 import com.clearsolutions.userservice.core.service.UserService;
 import com.clearsolutions.userservice.core.service.exception.ApiError;
@@ -26,9 +26,10 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-	private static final Integer PAGE = 1;
 	private final UserRepository userRepository;
+
 	private final ObjectMapper objectMapper;
+
 	@Value("${min.user.age}")
 	private Long minAge;
 

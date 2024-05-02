@@ -39,7 +39,7 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 			.map(fieldError -> new ApiError(fieldError.getField(), fieldError.getDefaultMessage()))
 			.collect(Collectors.toList());
 		final ApiErrorDto apiErrorDto = createApaDtoError(errorMessages);
-		return new ResponseEntity<>(apiErrorDto, HttpStatus.BAD_REQUEST);
+		return new ResponseEntity<>(apiErrorDto, HttpStatus.UNPROCESSABLE_ENTITY);
 	}
 
 	@ExceptionHandler(MinorUserException.class)
@@ -57,7 +57,7 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 	@ExceptionHandler(ResourceNotfoundException.class)
 	public ResponseEntity<ApiErrorDto> handleDuplicateEmailException(ResourceNotfoundException ex) {
 		final ApiErrorDto apiErrorDto = createApaDtoError(ex.getErrors());
-		return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(apiErrorDto);
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(apiErrorDto);
 	}
 
 	private ApiErrorDto createApaDtoError(final List<ApiError> ex) {
@@ -75,7 +75,7 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 		final List<ApiError> errors = new ArrayList<>();
 		errors.add(error);
 		final ApiErrorDto apiErrorDto = createApaDtoError(errors);
-		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(apiErrorDto);
+		return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(apiErrorDto);
 	}
 
 	@ExceptionHandler(PSQLException.class)
@@ -84,6 +84,6 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 		String message = ex.getMessage();
 		ApiErrorDto apiErrorDto = new ApiErrorDto();
 		apiErrorDto.setErrors(Collections.singletonList(new ApiError(field, message)));
-		return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(apiErrorDto);
+		return ResponseEntity.status(HttpStatus.CONFLICT).body(apiErrorDto);
 	}
 }

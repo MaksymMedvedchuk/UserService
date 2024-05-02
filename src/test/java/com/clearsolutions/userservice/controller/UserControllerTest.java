@@ -5,9 +5,9 @@ import com.clearsolutions.userservice.core.domain.dto.ResponseDto;
 import com.clearsolutions.userservice.core.domain.dto.UserDto;
 import com.clearsolutions.userservice.core.domain.dto.UserPatchDto;
 import com.clearsolutions.userservice.core.domain.entity.User;
+import com.clearsolutions.userservice.core.service.LinksProvider;
 import com.clearsolutions.userservice.core.service.UserService;
 import com.clearsolutions.userservice.core.service.exception.ResourceNotfoundException;
-import com.clearsolutions.userservice.core.service.LinksProvider;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
@@ -108,6 +108,7 @@ public class UserControllerTest {
 		ResponseDto response = objectMapper.readValue(jsonResponse, new TypeReference<ResponseDto>() {
 		});
 		response.getData().setId(id);
+
 		assertEquals(response.getData(), userDtoWithId);
 		verify(userService, times(1)).save(userNoId);
 		verify(converter, times(1)).convertToEntityAttribute(userDtoNoId);
@@ -125,8 +126,10 @@ public class UserControllerTest {
 	@Test
 	public void givenExistingUserId_whenDelete_thenUserIsDeleted() throws Exception {
 		doNothing().when(userService).delete(id);
+
 		mockMvc.perform(delete("/users/{id}", id))
 			.andExpect(status().isOk());
+
 		verify(userService, times(1)).delete(id);
 	}
 
@@ -189,6 +192,7 @@ public class UserControllerTest {
 		String jsonResponse = result.getResponse().getContentAsString();
 		ResponseDto response = objectMapper.readValue(jsonResponse, new TypeReference<ResponseDto>() {
 		});
+
 		assertEquals(response.getData(), updatedUserDto);
 		verify(userService, times(1)).update(updatedUser);
 		verify(converter, times(1)).convertToEntityAttribute(updatedUserDto);
@@ -205,7 +209,7 @@ public class UserControllerTest {
 
 	@Test
 	public void givenValidRangeBirthday_whenGetByBirthdayRange_thanReturnUsersList() throws Exception {
-				mockMvc.perform(get("/users")
+		mockMvc.perform(get("/users")
 				.param("startDate", "2023-10-10")
 				.param("endDate", "2023-11-11")
 				.accept(MediaType.APPLICATION_JSON))

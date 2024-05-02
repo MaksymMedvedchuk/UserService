@@ -99,7 +99,7 @@ public class UserController {
 	}
 
 	@GetMapping("")
-	@Operation(summary = "Search for users by birth date range")
+	@Operation(summary = "Search for users by birthdate range")
 	public ResponseEntity<CustomPage<ResponseDto>> getByBirthdayRange(
 		@RequestParam final LocalDate startDate,
 		@RequestParam final LocalDate endDate,
