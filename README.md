@@ -21,4 +21,8 @@ Installation and launch instructions:
 SWAGGER UI
 -
 http://localhost:8080/swagger-ui/index.html#/
+-
+Stack
+-
+Java 17, Spring(Boot, Core, Data), RESTfull API, Hibernate, PostgreSQL, Gradle, Docker, JUnit, Mockito
 
