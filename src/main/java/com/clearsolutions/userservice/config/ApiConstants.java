@@ -1,6 +1,6 @@
 package com.clearsolutions.userservice.config;
 
-public class ApiConstants {
+public final class ApiConstants {
 
 	public static final String BIRTHDAY = "birthday";
 
@@ -21,4 +21,7 @@ public class ApiConstants {
 	public static final String SQL_STATE = "23050";
 
 	public static final String CONSTRAINT_FIELD = "Field with constraint";
+
+	private ApiConstants() {
+	}
 }

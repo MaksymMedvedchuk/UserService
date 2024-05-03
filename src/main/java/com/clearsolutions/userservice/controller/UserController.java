@@ -52,7 +52,7 @@ public class UserController {
 
 	@PostMapping("")
 	@Operation(summary = "Create user")
-	public ResponseEntity<ResponseDto> create(@RequestBody final @Valid UserDto userDto) {
+	public ResponseEntity<ResponseDto> create(@RequestBody @Valid final UserDto userDto) {
 		final User user = converter.convertToEntityAttribute(userDto);
 		final User savedUser = userService.save(user);
 		final UserDto result = converter.convertToDatabaseColumn(savedUser);

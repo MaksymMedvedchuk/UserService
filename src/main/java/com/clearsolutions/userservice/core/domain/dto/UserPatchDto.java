@@ -14,25 +14,19 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class UserPatchDto {
 
-	@JsonProperty(access = JsonProperty.Access.READ_ONLY, value = "id")
+	@JsonProperty(access = JsonProperty.Access.READ_ONLY)
 	private Long id;
 
-	@JsonProperty("email")
 	private String email;
 
-	@JsonProperty("birthday")
 	private LocalDate birthday;
 
-	@JsonProperty("firstName")
 	private String firstName;
 
-	@JsonProperty("lastName")
 	private String lastName;
 
-	@JsonProperty("address")
 	private String address;
 
-	@JsonProperty("phoneNumber")
 	private String phoneNumber;
 
 	public UserPatchDto(

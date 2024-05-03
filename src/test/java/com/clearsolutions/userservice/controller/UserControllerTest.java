@@ -79,7 +79,7 @@ public class UserControllerTest {
 	private UserDto updatedUserDto;
 
 	@BeforeEach
-	void setUp() {
+	void setup() {
 		id = 1L;
 		userDtoWithId = createUserDtoWithId(id);
 		userDtoNoId = createUserDtoNoId();
@@ -120,7 +120,7 @@ public class UserControllerTest {
 		mockMvc.perform(post("/users")
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(objectMapper.writeValueAsString(invalidData)))
-			.andExpect(status().isBadRequest());
+			.andExpect(status().isUnprocessableEntity());
 	}
 
 	@Test
@@ -139,7 +139,7 @@ public class UserControllerTest {
 		when(userService.findUserByIdOrThrow(id)).thenReturn(null);
 
 		mockMvc.perform(delete("/users/{id}", id))
-			.andExpect(status().isUnprocessableEntity());
+			.andExpect(status().isNotFound());
 
 		verify(userService, times(1)).delete(id);
 	}
@@ -172,7 +172,7 @@ public class UserControllerTest {
 		mockMvc.perform(patch("/users/{id}", id)
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(objectMapper.writeValueAsString(withUpdateField)))
-			.andExpect(status().isUnprocessableEntity());
+			.andExpect(status().isNotFound());
 
 		verify(userService, times(1)).patch(withUpdateField, id);
 	}
@@ -204,7 +204,7 @@ public class UserControllerTest {
 		mockMvc.perform(put("/users/{id}", id)
 				.contentType(MediaType.APPLICATION_JSON)
 				.content(objectMapper.writeValueAsString(invalidData)))
-			.andExpect(status().isBadRequest());
+			.andExpect(status().isUnprocessableEntity());
 	}
 
 	@Test

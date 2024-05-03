@@ -1,6 +1,5 @@
 package com.clearsolutions.userservice.core.domain.entity;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -21,30 +20,23 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@JsonProperty("id")
 	private Long id;
 
-	@JsonProperty("email")
 	@Column(unique = true)
 	@Email
 	private String email;
 
-	@JsonProperty("firstName")
 	@Column(name = "first_name")
 	private String firstName;
 
-	@JsonProperty("lastName")
 	@Column(name = "last_name")
 	private String lastName;
 
-	@JsonProperty("birthday")
 	private LocalDate birthday;
 
-	@JsonProperty("address")
 	private String address;
 
 	@Column(name = "phone_Number")
-	@JsonProperty("phoneNumber")
 	private String phoneNumber;
 
 	public User() {

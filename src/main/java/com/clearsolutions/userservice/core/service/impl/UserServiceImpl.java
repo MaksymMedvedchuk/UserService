@@ -41,10 +41,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User save(final User user) {
 		checkDuplicationEmail(user);
-		if (calculateAge(user) < minAge) {
-			log.error("Attempted to save minor user with email: [{}]", user.getEmail());
-			throw new MinorUserException(List.of(new ApiError(ApiConstants.BIRTHDAY, ApiConstants.AGE_LESS_18)));
-		}
+		checkUserAge(user);
 		log.info("Saving user with email: [{}]", user.getEmail());
 		return userRepository.save(user);
 	}
@@ -73,6 +70,7 @@ public class UserServiceImpl implements UserService {
 		try {
 			final User user = findUserByIdOrThrow(id);
 			final User updatedUser = objectMapper.updateValue(user, dto);
+			checkUserAge(updatedUser);
 			return userRepository.save(updatedUser);
 		} catch (JsonMappingException ex) {
 			log.error("An error occurred while updating user with id [{}]", id);
@@ -119,6 +117,13 @@ public class UserServiceImpl implements UserService {
 
 	private Long calculateAge(final User user) {
 		return ChronoUnit.YEARS.between(user.getBirthday(), LocalDate.now());
+	}
+
+	private void checkUserAge(final User updatedUser) {
+		if (calculateAge(updatedUser) < minAge) {
+			log.error("Attempted to save minor user with email: [{}]", updatedUser.getEmail());
+			throw new MinorUserException(List.of(new ApiError(ApiConstants.BIRTHDAY, ApiConstants.AGE_LESS_18)));
+		}
 	}
 }
 
