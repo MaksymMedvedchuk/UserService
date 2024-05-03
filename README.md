@@ -18,11 +18,11 @@ Installation and launch instructions:
 3. Run docker-compose file - docker-compose up
 
 
-SWAGGER UI
+Swagger-UI:
 -
 http://localhost:8080/swagger-ui/index.html#/
 -
-Stack
+Stack:
 -
 Java 17, Spring(Boot, Core, Data), RESTfull API, Hibernate, PostgreSQL, Gradle, Docker, JUnit, Mockito
 
