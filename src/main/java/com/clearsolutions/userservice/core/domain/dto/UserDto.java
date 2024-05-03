@@ -18,16 +18,16 @@ public class UserDto {
 	@JsonProperty(access = JsonProperty.Access.READ_ONLY)
 	private Long id;
 
-	@Email
+	@Email(message = "Incorrectly formed email address")
 	private String email;
 
-	@NotBlank
+	@NotBlank(message = "Can't be empty")
 	private String firstName;
 
-	@NotBlank
+	@NotBlank(message = "Can't be empty")
 	private String lastName;
 
-	@Past
+	@Past(message = "Should be in past")
 	private LocalDate birthday;
 
 	private String address;
