@@ -12,5 +12,5 @@ Functionality:
 5. Search for users by birth date range. Add the validation which checks that “From” is less than “To”.  Should return a list of objects;
 
 SWAGGER UI
--
+
 http://localhost:8080/swagger-ui/index.html#/
