@@ -17,11 +17,10 @@ Installation and launch instructions:
 2. Make clean and build project - ./gradlew clean build
 3. Run docker-compose file - docker-compose up
 
-
 Swagger-UI:
 -
 http://localhost:8080/swagger-ui/index.html#/
--
+
 Stack:
 -
 Java 17, Spring(Boot, Core, Data), RESTfull API, Hibernate, PostgreSQL, Gradle, Docker, JUnit, Mockito
